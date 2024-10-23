@@ -1,0 +1,41 @@
+.side-container{
+    width: 280px;
+    height: 100%;
+    background-color: #E8F1FD;
+    padding: 0 2rem;
+    padding-top: 2.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.88rem;
+}
+.side-container h1{
+    font-size: .8rem;
+    text-transform: uppercase;
+    color: #4F4F4F;
+}
+.tags{
+    display: flex;
+    flex-direction: column;
+    gap: 1.8rem;
+}
+.tags a{
+    display: flex;
+    gap: .8rem;
+    font-size: 1.2rem;
+    text-decoration: none;
+    color: #4F4F4F;
+    font-weight: 500;
+    transition: .3s ease;
+}
+.tags a:hover{
+    color: #146FE6;
+}
+.tags a:active{
+    color:#146FE6 ;
+}
+
+/* @media (min-width:1370px){
+    .side-container{
+        width: 25vw;
+    }
+} */

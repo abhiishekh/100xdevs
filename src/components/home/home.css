@@ -1,0 +1,9 @@
+.home-container{
+    width: 100vw;
+    height: 100vh;
+}
+.side-hero{
+   width: 100vw;
+   height: calc(100% - 56px);
+   display: flex;
+}

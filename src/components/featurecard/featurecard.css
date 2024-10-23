@@ -1,0 +1,40 @@
+.featurecard{
+    height: 120px;
+    width: 300px;
+    /* background-color: rgba(0, 128, 0, 0.212); */
+    border-left: 1px solid #6C6183;
+    padding: .2rem .8rem;
+    margin-bottom: 5rem;
+}
+
+.title-logo{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    line-height: 30px;
+    margin-bottom: .5rem;
+}
+.title-logo img{
+    height: 15%;
+    width: 15%;
+    /* margin-left: 20px; */
+}
+.title-logo .line{
+    height: 2px;
+    width: 80px;
+    background-color: blue;
+}
+.title h3{
+    font-size: 22px;
+}
+.featurecard p{
+    font-size: 1rem;
+    letter-spacing: .02rem;
+    width: 90%;
+    line-height: 22px;
+}
+@media (min-width:1370px){
+    .featurecard{
+        width: 350px;
+    }
+}
