@@ -1,9 +1,27 @@
-import React from 'react'
-import './nav.css'
-import logo from '../../assets/logo.png'
+import React, { useState } from 'react';
+import './nav.css';
+import logo from '../../assets/logo.png';
 import { IoSearch } from "react-icons/io5";
+import Modal from '../model/Model'
+import NextModel from '../model/NextModel';
+
 
 const Nav = () => {
+  const [isModalOpen, setModalOpen] = useState(false);
+  const [isNextModelOpen , setIsNextModelOpen] = useState(false)
+
+  const openModal = () => {
+    setModalOpen(true);
+  };
+  const opneNext =()=>{
+    setIsNextModelOpen(true)
+  }
+
+  const closeModal = () => {
+    setModalOpen(false);
+    setIsNextModelOpen(false)
+  };
+
   return (
     <>
       <div className="nav-container">
@@ -14,17 +32,19 @@ const Nav = () => {
           <div className="search">
             <input type="text" placeholder='type here to search..' />
             <div className="search-icon">
-            <IoSearch />
+              <IoSearch />
             </div>
           </div>
           <div className="btns">
-            <button>Signup</button>
-            <button>Login</button>
+            <button onClick={openModal}>Signup</button>
+            <button onClick={opneNext}>Login</button>
           </div>
         </div>
       </div>
+      <Modal isOpen={isModalOpen} onClose={closeModal} />
+      <NextModel isOpen={isNextModelOpen} onClose={closeModal}/>
     </>
-  )
-}
+  );
+};
 
-export default Nav
+export default Nav;

@@ -1,23 +1,32 @@
-import React from 'react'
-import './home.css'
-import Nav from '../nav/Nav'
-import Sidemenu from '../sidemenu/Sidemenu'
-import Hero from '../hero/Hero'
-
+import React from 'react';
+import './home.css';
+import Nav from '../nav/Nav';
+import Sidemenu from '../sidemenu/Sidemenu';
+import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom';
+import Hero from '../hero/Hero';
+import Courses from '../courses/Courses';
+import NextModel from '../model/NextModel';
+import CourseDetails from '../viewCourse/CourseDetails';
 
 const Home = () => {
   return (
-    <>
-    <div className="home-container">
-    <Nav/>
-    <div className="side-hero">
-        <Sidemenu/>
-        <Hero/>
-    </div>
+    <BrowserRouter>
+      <div className="home-container">
+        <Nav />
+        <div className="side-hero">
+          <Sidemenu />
+          {/* <div className="hero-content"> */}
+            <Routes>
+              {/* <Route path="/" element={<Navigate to="/home" />} /> */}
+              <Route path="/" element={<Hero />} />
+              <Route path="/courses" element={<Courses />} />
+              <Route path='/coursedetails' element={<CourseDetails/>}/>
+            </Routes>
+          {/* </div> */}
+        </div>
+      </div>
+    </BrowserRouter>
+  );
+};
 
-    </div>
-    </>
-  )
-}
-
-export default Home
+export default Home;

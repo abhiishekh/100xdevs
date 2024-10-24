@@ -21,6 +21,7 @@ button {
     border-radius: 5rem;
     transition: background-color .5s ease, transform .5s ease;
     cursor: pointer;
+    letter-spacing: 1px;
 }
 
 button:hover {

@@ -5,11 +5,23 @@
     position: relative;
     overflow: hidden;
     margin-bottom: 5rem;
+    overflow: hidden;
 }
 
 .crousel-container img{
     width: 100%;
     height: 100%;
+}
+.coursel-inner{
+    display: flex;
+}
+.left-right-btn{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 4px;
+    z-index: 999;
 }
 
 @media (min-width:1370px){

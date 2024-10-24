@@ -1,19 +1,18 @@
 import React from 'react'
-import './coursecard.css'
 import completeDev from '../../assets/completedev.png'
-import { Link } from 'react-router-dom'
-const CourseCard = () => {
+
+const BuyCard = () => {
     return (
-        <>
-            <div className="coursecard">
-                <div className="course-image">
+        <div className='buy-card'>
+          <div className="course-image">
                     <img src={completeDev} alt="" />
                 </div>
                 <div className="course-details">
 
-                <div className="title">
+                {/* <div className="title">
                     <h3> Complete Web Development + Web3 Development</h3>
-                </div>
+                </div> */}
+                <p style={{marginTop:'20px', color:'gray'}}>PRICE</p>
                 <div className="pricing">
                     <div className="price">
 
@@ -22,12 +21,12 @@ const CourseCard = () => {
                     </div>
                     <p className='green'>29.53% off</p>
                 </div>
-               <Link to='/coursedetails'><button>View Details</button></Link>
+              <button style={{marginBottom:'10px'}}>Buy Now</button>
+              <button>Pay Via Crypto</button>
                 
                 </div>
-            </div>
-        </>
+        </div>
     )
 }
 
-export default CourseCard
+export default BuyCard

@@ -11,6 +11,7 @@
 .side-container h1{
     font-size: .8rem;
     text-transform: uppercase;
+    letter-spacing: .5px;
     color: #4F4F4F;
 }
 .tags{
@@ -27,11 +28,14 @@
     font-weight: 500;
     transition: .3s ease;
 }
-.tags a:hover{
+.tags a:hover, .tags a.active{
     color: #146FE6;
 }
 .tags a:active{
     color:#146FE6 ;
+}
+.tags a:focus{
+    color:#146FE6
 }
 
 /* @media (min-width:1370px){
