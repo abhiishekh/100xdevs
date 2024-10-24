@@ -48,3 +48,15 @@
         width: 350px;
     }
 }
+@media (max-width:450px){
+    .coursecard{
+        width: 100%;
+        height: auto;
+    }
+}
+@media (max-width:768px){
+    .coursecard{
+        width: 400px;
+        height: auto;
+    }
+}

@@ -12,8 +12,8 @@ const Crousel = () => {
         <div className="crousel-inner">
 
         <img src={crouselImg1} alt="" />
-        <img src={crouselImg2} alt="" />
-        <img src={crouselImg3} alt="" />
+        {/* <img src={crouselImg2} alt="" />
+        <img src={crouselImg3} alt="" /> */}
         </div>
 
        

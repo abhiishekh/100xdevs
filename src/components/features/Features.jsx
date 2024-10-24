@@ -6,7 +6,7 @@ import featureImg from '../../assets/feature.png'
 const Features = () => {
   return (
     <div className='featrure'>
-        <h1 style={{fontSize:'50px',marginBottom:'40px'}}>Why 100xDevs?</h1>
+        <h1 >Why 100xDevs?</h1>
         <div className="features">
             {/* <FeatureCard/>
             <FeatureCard/>

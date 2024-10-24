@@ -9,7 +9,7 @@ import { FaYoutube } from "react-icons/fa";
 
 const Footer = () => {
   return (
-    <div className='footer'>
+    <div className='footer '>
       <div className="logo">
         <img src={logo} alt="" />
       </div>

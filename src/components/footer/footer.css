@@ -36,3 +36,15 @@
     gap: 1rem;
     font-size: 1rem;
 }
+@media (min-width:1370px) {
+    .footer{
+        width: 100%;
+    }
+    
+}
+@media (max-width:768px){
+    .footer{
+        flex-direction: column;
+        gap: 2rem;
+    }
+}

@@ -1,52 +1,77 @@
 .buy-card{
     width: 400px;
     height: 450px;
-    /* background-color: green; */
     border: 1px solid rgba(128, 128, 128, 0.534);
     border-radius: 20px;
     overflow: hidden;
+    display: flex;
+    flex-direction: column; /* Ensure elements stack vertically */
 
 }
-.buy-card .course-image img{
-    width: 100%;
-    height: 100%;
+
+.buy-card .course-image {
+    flex: 1; /* Allow the image to take up available space */
 }
-/* .course-details{
-    padding: 1rem;
-    
-} */
-.course-details .title h3{
+
+.buy-card .course-image img {
+    width: 100%;
+    height: auto; /* Keep aspect ratio */
+    object-fit: cover; /* Ensure the image covers the area */
+}
+
+.course-details {
+    padding: 1rem; /* Add padding for better spacing */
+}
+
+.course-details .title h3 {
     font-size: 1.1rem;
     line-height: 25px;
-
 }
-.course-details .pricing{
+
+.course-details .pricing {
     display: flex;
     align-items: center;
-    /* margin: 1rem 0; */
     justify-content: space-between;
     font-size: 1rem;
     letter-spacing: 1.5px;
     font-weight: 600;
     margin-top: 3rem;
 }
-.price{
+
+.price {
     display: flex;
-    gap: .3rem;
+    gap: 0.3rem;
 }
-.price .mrp{
+
+.price .mrp {
     color: rgba(128, 128, 128, 0.76);
     text-decoration: line-through;
 }
-.course-details .green{
+
+.course-details .green {
     color: #25c16f;
 }
+
 .course-details button {
     width: 100%;
+    margin-top: 1rem; /* Add some spacing for the button */
 }
-@media (min-width:1370px){
-    .buy-card{
+/* 
+@media (min-width: 1370px) {
+    .buy-card {
         width: 450px;
         height: 500px;
+    }
+} */
+
+@media (max-width: 768px) {
+    .buy-card {
+       width: 100%;
+        height: auto;
+    }
+
+    .buy-card .course-image img {
+        width: 100%; /* Set to 100% for responsiveness */
+        height: auto; /* Maintain aspect ratio */
     }
 }

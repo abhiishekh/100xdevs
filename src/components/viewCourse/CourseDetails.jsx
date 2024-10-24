@@ -2,6 +2,7 @@ import React from 'react'
 import './coursedetails.css'
 import Footer from '../footer/Footer'
 import CourseModel from './CourseModel'
+import BuyCard from '../buycard/BuyCard'
 
 const CourseDetails = () => {
   return (
@@ -9,6 +10,9 @@ const CourseDetails = () => {
 
         <div className="details">
             <h1>Complete Web Development + Devops + Blockchain Cohort</h1>
+        </div>
+        <div className="buy">
+          <BuyCard/>
         </div>
         <div className="upper">
         <h3>Overview</h3>
@@ -27,11 +31,14 @@ const CourseDetails = () => {
       </div>
 
     </div>
-    <div className="footer">
+    <div className="coursefooter">
 
       <Footer/>
     </div>
+    <div className="coursemod">
+
       <CourseModel/>
+    </div>
     </div>
   )
 }

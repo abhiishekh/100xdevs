@@ -11,8 +11,8 @@ const Hero = () => {
       <div className="hero-container">
         <div className="temp">
          
-          <Crousel />
-          <Featured />
+          <Crousel/>
+          <Featured/>
           <Features/>
           <About/>
           <Footer/>

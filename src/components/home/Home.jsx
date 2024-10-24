@@ -15,14 +15,13 @@ const Home = () => {
         <Nav />
         <div className="side-hero">
           <Sidemenu />
-          {/* <div className="hero-content"> */}
+
             <Routes>
-              {/* <Route path="/" element={<Navigate to="/home" />} /> */}
               <Route path="/" element={<Hero />} />
               <Route path="/courses" element={<Courses />} />
               <Route path='/coursedetails' element={<CourseDetails/>}/>
             </Routes>
-          {/* </div> */}
+
         </div>
       </div>
     </BrowserRouter>

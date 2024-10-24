@@ -1,4 +1,5 @@
 import React from 'react'
+import './buycard.css'
 import completeDev from '../../assets/completedev.png'
 
 const BuyCard = () => {
@@ -8,10 +9,6 @@ const BuyCard = () => {
                     <img src={completeDev} alt="" />
                 </div>
                 <div className="course-details">
-
-                {/* <div className="title">
-                    <h3> Complete Web Development + Web3 Development</h3>
-                </div> */}
                 <p style={{marginTop:'20px', color:'gray'}}>PRICE</p>
                 <div className="pricing">
                     <div className="price">

@@ -28,9 +28,9 @@
     font-weight: 500;
     transition: .3s ease;
 }
-.tags a:hover, .tags a.active{
+/* .tags a:hover, .tags a.active{
     color: #146FE6;
-}
+} */
 .tags a:active{
     color:#146FE6 ;
 }
@@ -38,8 +38,8 @@
     color:#146FE6
 }
 
-/* @media (min-width:1370px){
+@media (max-width:768px),(max-width:1024px){
     .side-container{
-        width: 25vw;
+        display: none;
     }
-} */
+}
