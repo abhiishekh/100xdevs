@@ -13,7 +13,8 @@
 .course-modal-content {
     background: #E8F1FD;
 
-    width: 380px;
+    width: 403px;
+    height: auto;
     border-radius: 30px;
     margin-top: 50px;
     margin-right: 60px;

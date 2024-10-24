@@ -1,6 +1,6 @@
 .buy-card{
     width: 400px;
-    height: 450px;
+    height: auto;
     border: 1px solid rgba(128, 128, 128, 0.534);
     border-radius: 20px;
     overflow: hidden;
@@ -9,9 +9,7 @@
 
 }
 
-.buy-card .course-image {
-    flex: 1; /* Allow the image to take up available space */
-}
+
 
 .buy-card .course-image img {
     width: 100%;
