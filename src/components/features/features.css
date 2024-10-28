@@ -5,7 +5,7 @@
     align-items: center;
     margin-bottom: 40px;
 }
-.featrure h1{
+.featrure h2{
     font-size: 50px;
     margin-bottom: 40px;
 }
@@ -36,7 +36,7 @@
     .features{
         width: 100%;
     }
-    .feature h1{
+    .featrure h2{
         font-size: 20px;
     }
     .features-img{

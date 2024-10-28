@@ -6,6 +6,7 @@
     display: flex;
     justify-content: space-between;
     padding-bottom: 50px;
+    bottom: 0;
 }
 .quick-links{
     display: flex;

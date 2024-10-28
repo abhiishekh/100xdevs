@@ -7,6 +7,7 @@ import Hero from '../hero/Hero';
 import Courses from '../courses/Courses';
 import NextModel from '../model/NextModel';
 import CourseDetails from '../viewCourse/CourseDetails';
+import MyCourses from '../mycourses/MyCourses';
 
 const Home = () => {
   return (
@@ -20,6 +21,7 @@ const Home = () => {
               <Route path="/" element={<Hero />} />
               <Route path="/courses" element={<Courses />} />
               <Route path='/coursedetails' element={<CourseDetails/>}/>
+              <Route path='/mycourses' element={<MyCourses/>}/>
             </Routes>
 
         </div>

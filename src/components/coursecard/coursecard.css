@@ -1,6 +1,6 @@
 .coursecard{
     width: 300px;
-    height: 400px;
+    height: auto;
     /* background-color: green; */
     border: 1px solid rgba(128, 128, 128, 0.534);
     border-radius: 20px;
@@ -13,6 +13,10 @@
 }
 .course-details{
     padding: 1rem;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 .course-details .title h3{
     font-size: 1.1rem;
@@ -50,13 +54,13 @@
 }
 @media (max-width:450px){
     .coursecard{
-        width: 100%;
+        width: auto;
         height: auto;
     }
 }
 @media (max-width:768px){
     .coursecard{
-        width: 350px;
+        width: auto;
         height: auto;
     }
 }

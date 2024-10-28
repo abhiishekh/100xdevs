@@ -37,6 +37,11 @@
 .tags a:focus{
     color:#146FE6
 }
+.login{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
 
 @media (max-width:768px),(max-width:1024px){
     .side-container{

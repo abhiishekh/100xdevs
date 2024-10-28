@@ -1,44 +1,42 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import './nav.css';
 import logo from '../../assets/logo.png';
 import { IoSearch } from "react-icons/io5";
-import Modal from '../model/Model'
 import NextModel from '../model/NextModel';
 import { useNavigate } from 'react-router-dom';
 import { IoMenuOutline } from "react-icons/io5";
 import { FaUserCircle } from "react-icons/fa";
-import Sidemenu from '../sidemenu/Sidemenu';
 import SideBar from './SideBar';
+import {useModel, useNextModel} from '../../Hooks/useModel'
+import Modal from '../model/Modal';
+import CreatorModel from '../model/CreatorModel';
+import { useAuth } from '../authcontext/AuthContext';
+import { MdLogout } from "react-icons/md";
 
 
 const Nav = () => {
+
   const navigate = useNavigate()
-  const [isModalOpen, setModalOpen] = useState(false);
-  const [isNextModelOpen , setIsNextModelOpen] = useState(false)
   const [isSideOpen, setIsSideOpen] = useState(false)
+  const {isModalOpen, openModal, closeModal} = useModel()
+  const {isNextModel,openNextModel,closeNextModel} = useNextModel()
+ const {auth,setAuth} = useAuth()
 
-  const openModal = () => {
-    setModalOpen(true);
-  };
-  const openNext =()=>{
-    setIsNextModelOpen(true)
-  }
-
-  const closeModal = () => {
-    setModalOpen(false);
-    setIsNextModelOpen(false)
-  };
   const logoHandler =()=>{
     navigate('/')
   }
   const sideHandler =()=>{
     setIsSideOpen(prev => !prev)
-    // console.log(isSideOpen)
   }
 
   const closeSidebar = () => {
     setIsSideOpen(false);
   };
+  const handleLogout=()=>{
+    localStorage.removeItem("token")
+    setAuth(false)
+    navigate('/')
+  }
 
   return (
     <>
@@ -68,14 +66,27 @@ const Nav = () => {
               <IoSearch />
             </div>
           </div>
-          <div className="btns">
-            <button onClick={openModal}>Signup</button>
-            <button onClick={openNext}>Login</button>
+          {
+            auth ? (
+              <div className="btns">
+           <button onClick={handleLogout}><MdLogout /></button>
           </div>
+            ):(
+              <div className="btns">
+            <button onClick={openModal}>Signup</button>
+            <button onClick={openNextModel}>Login</button>
+          </div>
+            )
+          }
+           {/* <div className="btns">
+            <button onClick={openModal}>Signup</button>
+            <button onClick={openNextModel}>Login</button>
+          </div> */}
+          
         </div>
       </div>
       <Modal isOpen={isModalOpen} onClose={closeModal} />
-      <NextModel isOpen={isNextModelOpen} onClose={closeModal}/>
+      <NextModel isOpen={isNextModel} onClose={closeNextModel}/>
       <SideBar isOpen={isSideOpen} onClose={closeSidebar} />
     </>
   );

@@ -26,9 +26,4 @@
     z-index: 999;
 }
 
-@media (min-width:1370px){
-    .crousel-container{
 
-        height: 630px;
-    }
-}
