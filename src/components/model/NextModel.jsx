@@ -28,7 +28,7 @@ const NextModel = ({ isOpen, onClose }) => {
         setError(''); // Reset error on new submit
 
         try {
-            const response = await axios.post('http://localhost:3000/api/v1/signin', formData);
+            const response = await axios.post(`${import.meta.env.VITE_BACKEND_URL}/signin`, formData);
             if (response.status === 200 && response.data.token) {
                 const token = response.data.token; // Get the token from the response
                 localStorage.setItem("token", token); // Store the token

@@ -6,7 +6,7 @@ import { usefetch } from '../../Hooks/useFetch'
 
 const Courses = () => {
 
-  const {data, error,loading} = usefetch({url:'http://localhost:3000/api/v1/all-courses'})
+  const {data, error,loading} = usefetch({url:`${import.meta.env.VITE_BACKEND_URL}/all-courses`})
 
   if (loading) return <div>Loading...</div>;
   if (error) return <div>Error: {error}</div>;
@@ -23,7 +23,7 @@ const Courses = () => {
           data.map((items)=>(
             <CourseCard
             key={items._id}
-
+            _id={items._id}
             title={items.title}
             description={items.description}
             price ={items.price}

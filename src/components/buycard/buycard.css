@@ -5,7 +5,7 @@
     border-radius: 20px;
     overflow: hidden;
     display: flex;
-    flex-direction: column; /* Ensure elements stack vertically */
+    flex-direction: column; 
 
 }
 
@@ -13,12 +13,12 @@
 
 .buy-card .course-image img {
     width: 100%;
-    height: auto; /* Keep aspect ratio */
-    object-fit: cover; /* Ensure the image covers the area */
+    height: auto; 
+    object-fit: cover; 
 }
 
 .course-details {
-    padding: 1rem; /* Add padding for better spacing */
+    padding: 1rem; 
 }
 
 .course-details .title h3 {
@@ -52,24 +52,18 @@
 
 .course-details button {
     width: 100%;
-    margin-top: 1rem; /* Add some spacing for the button */
+    margin-top: 1rem; 
 }
-/* 
-@media (min-width: 1370px) {
-    .buy-card {
-        width: 450px;
-        height: 500px;
-    }
-} */
 
-@media (max-width: 768px) {
+
+@media (max-width: 368px) {
     .buy-card {
        width: 100%;
         height: auto;
     }
 
     .buy-card .course-image img {
-        width: 100%; /* Set to 100% for responsiveness */
-        height: auto; /* Maintain aspect ratio */
+        width: 100%;
+        height: auto;
     }
 }

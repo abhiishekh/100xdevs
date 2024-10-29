@@ -1,0 +1,25 @@
+.payment-methods {
+    display: flex;
+    justify-content: center; /* Center the text */
+    margin-bottom: 20px; /* Space from the bottom */
+}
+.payment-methods span {
+    padding: 0 15px; /* Padding on the left and right */
+    cursor: pointer;
+    transition: color 0.3s; /* Smooth transition for color change */
+}
+
+.payment-methods span:hover {
+    color: darkblue; /* Change color on hover */
+}
+
+.payments {
+    display: flex;
+    justify-content: center; /* Center the payment method content */
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center items horizontally */
+}
+
+.solana, .upi {
+    text-align: center; /* Center text inside payment method sections */
+}

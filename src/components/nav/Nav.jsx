@@ -78,10 +78,6 @@ const Nav = () => {
           </div>
             )
           }
-           {/* <div className="btns">
-            <button onClick={openModal}>Signup</button>
-            <button onClick={openNextModel}>Login</button>
-          </div> */}
           
         </div>
       </div>

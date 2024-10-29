@@ -52,13 +52,18 @@
         width: 350px;
     }
 }
+/* @media (max-width:768),(min-width:1024px){
+    .coursecard{
+        width: 400px;
+    }
+} */
 @media (max-width:450px){
     .coursecard{
         width: auto;
         height: auto;
     }
 }
-@media (max-width:768px){
+@media (max-width:378px){
     .coursecard{
         width: auto;
         height: auto;

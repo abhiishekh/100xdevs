@@ -33,10 +33,7 @@ const Sidemenu = () => {
           null
         )
       }
-      {/* <div className="login">
-      <button onClick={openCreator}>Become a Tutor</button>
-      <button onClick={openCreatorLogin}>Tutor Login</button>
-      </div> */}
+
       <CreatorModel isOpen={isCreatorOpen} onClose={closeCreator}/>
       <CreatorLogin isOpen={isCreatorLogin} onClose={closeCreatorLogin}/>
     </div>

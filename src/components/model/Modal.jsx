@@ -27,7 +27,7 @@ const Modal = ({ isOpen, onClose }) => {
         setLoading(true);
 
         try {
-            const response = await axios.post('http://localhost:3000/api/v1/signup',formData)
+            const response = await axios.post(`${import.meta.env.VITE_BACKEND_URL}/signup`,formData)
 
             if(response.status === 200 && response.data.token){
                 const token = response.data.token

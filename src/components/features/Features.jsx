@@ -8,12 +8,6 @@ const Features = () => {
     <div className='featrure'>
         <h2 >Why 100xDevs?</h2>
         <div className="features">
-            {/* <FeatureCard/>
-            <FeatureCard/>
-            <FeatureCard/>
-            <FeatureCard/>
-            <FeatureCard/>
-            <FeatureCard/> */}
             <div className="features-img">
               <img src={featureImg} alt="" />
             </div>
