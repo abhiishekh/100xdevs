@@ -46,7 +46,7 @@ const SearchPage = () => {
               value={searchText}
               placeholder='Type here to search..'
             />
-            <div type="submit" className="search-icon"> 
+            <div type="submit" className="search-icon" style={{backgroundColor:'#146FE6',color:'white'}}> 
               <IoSearch />
             </div>
           </form>

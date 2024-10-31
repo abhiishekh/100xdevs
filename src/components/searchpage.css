@@ -3,11 +3,7 @@
         flex-direction: column;
         align-items: center;
     }
-form{
-    display: flex;
-    align-items: center;
-    gap: 0;
-}
+
 .se{
     display: flex;
     align-items: center;
