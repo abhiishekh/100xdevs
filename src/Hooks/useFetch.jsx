@@ -7,7 +7,7 @@ export const usefetch =({url})=>{
     const [data,setData] = useState(null)
     const [error, setError] = useState('')
     const [loading, setLoading] = useState(false)
-
+    const token = localStorage.getItem("token")
     useEffect(()=>{
     const fetchData = async()=>{
         setLoading(true)

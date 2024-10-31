@@ -25,6 +25,7 @@ const CourseCard = (props) => {
                 <div className="title">
                     <h3> {props.title}</h3>
                     <p>{props.author}</p>
+                    <p style={{color:'gray',margin:'1rem 0'}}>{props.description}</p>
                 </div>
                 <div className="pricing">
                     <div className="price">

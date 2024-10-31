@@ -10,6 +10,7 @@ import CourseDetails from '../viewCourse/CourseDetails';
 import MyCourses from '../mycourses/MyCourses';
 import Solana from '../payments/Solana';
 import Upi from '../payments/Upi';
+import Searchpage from '../Searchpage';
 
 const Home = () => {
   return (
@@ -26,6 +27,7 @@ const Home = () => {
               <Route path='/mycourses' element={<MyCourses/>}/>
               <Route path='/solana' element={<Solana/>}/>
               <Route path='/upi' element={<Upi/>}/>
+              <Route path='/search' element={<Searchpage/>}/>
             </Routes>
 
         </div>
